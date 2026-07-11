@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish S | AI Engineer & Full Stack Developer</title>
+    <meta name="description" content="Manish S — AI Engineer, Prompt Engineer, and Full Stack Developer. Building intelligent digital experiences with 2+ years of hands-on AI & web development experience.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Kalam:wght@400;700&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <canvas id="bg-canvas" class="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="solid-nav">
+        <div class="logo">Manish S</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Events</a></li>
+            <li><button id="open-connect-modal" class="btn-nav"><i class="ph ph-link"></i> Connect</button></li>
+        </ul>
+        <button id="hamburger" class="hamburger"><i class="ph ph-list"></i></button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu hidden">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#education" class="mobile-link">Education</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#gallery" class="mobile-link">Events</a>
+        <button id="open-connect-mobile" class="mobile-link btn-nav" style="border:none;">Connect</button>
+    </div>
+
+    <main>
+
+        <!-- ==================== HERO / ABOUT ==================== -->
+        <section id="about" class="two-col-layout">
+            <div class="card dark-card fade-in-up">
+                <div class="card-content">
+                    <div class="status-chip"><span class="dot"></span> Open to Opportunities</div>
+                    <h1>
+                        Building intelligent<br>
+                        <span id="typewriter" class="accent-text typing"></span><span class="cursor">|</span>
+                    </h1>
+                    <p class="bio-text">Hi, I'm <strong>Shelke</strong>, an AI Engineer, Prompt Engineer, and Full Stack Developer passionate about building intelligent digital experiences. With over <strong>2 years of hands-on experience</strong> in Artificial Intelligence and modern web development, I specialize in creating AI-powered applications, responsive websites, automation solutions, and scalable digital products that combine innovation, creativity, and cutting-edge technology.</p>
+                    
+                    <div class="title-chips">
+                        <span class="chip">AI Engineer</span>
+                        <span class="chip">Full Stack Developer</span>
+                        <span class="chip">Prompt Engineer</span>
+                        <span class="chip">AI Application Developer</span>
+                        <span class="chip">Web Designer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card light-card fade-in-up delay-1">
+                <div class="card-content centered-content">
+                    <div class="avatar-ring">
+                        <!-- Profile Image -->
+                        <img src="profile.jpg" alt="Manish S" class="profile-img" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\\\'http://www.w3.org/2000/svg\\\' width=\\\'140\\\' height=\\\'140\\\' viewBox=\\\'0 0 24 24\\\' fill=\\\'none\\\' stroke=\\\'%23FFFFCC\\\' stroke-width=\\\'1.5\\\' stroke-linecap=\\\'round\\\' stroke-linejoin=\\\'round\\\'%3E%3Cpath d=\\\'M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\\\'%3E%3C/path%3E%3Ccircle cx=\\\'12\\\' cy=\\\'7\\\' r=\\\'4\\\'%3E%3C/circle%3E%3C/svg%3E'; this.style.backgroundColor='#1A1A00'; this.style.padding='30px';">
+                    </div>
+                    <h2 class="profile-name">Manish S</h2>
+                    <p class="profile-alias">"Shelke"</p>
+                    <p class="profile-title">AI Engineer & Full Stack Developer</p>
+                    <p class="profile-location"><i class="ph ph-map-pin"></i> Bangalore, Karnataka, India</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== EDUCATION ==================== -->
+        <section id="education" class="card light-card section-card fade-in-up delay-2">
+            <div class="card-content">
+                <h2 class="section-title dark-title"><i class="ph ph-graduation-cap"></i> Education & Achievements</h2>
+                
+                <div class="edu-grid">
+                    <div class="edu-block">
+                        <div class="edu-degree">
+                            <h3>Bachelor of Computer Applications (BCA)</h3>
+                            <p class="edu-college"><i class="ph ph-buildings"></i> KLE Society's Degree College</p>
+                            <p class="edu-detail"><i class="ph ph-brain"></i> Specialization: <strong>AI & ML</strong></p>
+                            <p class="edu-detail"><i class="ph ph-hourglass-medium"></i> <strong>Final Year Student</strong></p>
+                        </div>
+                        
+                        <h4 class="sub-heading">Relevant Coursework</h4>
+                        <div class="title-chips dark-chips">
+                            <span class="chip dark-chip">Artificial Intelligence</span>
+                            <span class="chip dark-chip">Machine Learning</span>
+                            <span class="chip dark-chip">Full Stack Web Dev</span>
+                            <span class="chip dark-chip">DSA</span>
+                            <span class="chip dark-chip">DBMS</span>
+                            <span class="chip dark-chip">Software Engineering</span>
+                        </div>
+                    </div>
+                    
+                    <div class="edu-block">
+                        <h4 class="sub-heading">Achievements</h4>
+                        <ul class="achievement-list">
+                            <li><i class="ph ph-trophy"></i> Debate Competition Winner</li>
+                            <li><i class="ph ph-star"></i> Campus Ambassador</li>
+                            <li><i class="ph ph-rocket"></i> Under 25 Fellowship Participant</li>
+                            <li><i class="ph ph-code"></i> Active Hackathon Participant</li>
+                            <li><i class="ph ph-robot"></i> AI Application Developer with practical experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJECTS CAROUSEL ==================== -->
+        <section id="projects" class="card dark-card section-card fade-in-up">
+            <div class="card-content">
+                <div class="section-header" style="margin-bottom: 24px;">
+                    <h2 class="section-title light-title" style="margin-bottom: 0;"><i class="ph ph-rocket-launch"></i> Featured Projects</h2>
+                </div>
+                
+                <div class="carousel-container">
+                    <button class="carousel-btn prev-btn" id="prev-slide"><i class="ph ph-caret-left"></i></button>
+                    
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track" id="project-track">
+                            
+                            <!-- Slide 1: Memory Curve AI -->
+                            <li class="carousel-slide current-slide">
+                                <div class="project-slide-content">
+                                    <div class="project-header">
+                                        <div>
+                                            <span class="project-badge">AI + Education</span>
+                                            <h3 class="project-name">Memory Curve AI</h3>
+                                            <p class="project-tagline">AI-powered learning platform using the Ebbinghaus Forgetting Curve.</p>
+                                        </div>
+                                        <a href="https://github.com/ManishShelke" target="_blank" class="btn-project"><i class="ph ph-github-logo"></i> GitHub</a>
+                                    </div>
+                                    
+                                    <p class="project-desc">Memory Curve AI combines education and cognitive science into an intelligent platform. It leverages AI to generate personalized revision schedules, helping students retain knowledge efficiently and effectively combat the forgetting curve.</p>
+                                    
+                                    <div class="project-details-grid">
+                                        <div>
+                                            <h4>Key Features</h4>
+                                            <ul class="feature-list">
+                                                <li><i class="ph ph-brain"></i> AI-powered revision planner</li>
+                                                <li><i class="ph ph-bell-ringing"></i> Smart revision reminders</li>
+                                                <li><i class="ph ph-chart-line-up"></i> Student progress tracking</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Technologies</h4>
+                                            <div class="title-chips">
+                                                <span class="chip">Python</span>
+                                                <span class="chip">React (Vite)</span>
+                                                <span class="chip">AI</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Slide 2: Food Bridge -->
+                            <li class="carousel-slide">
+                                <div class="project-slide-content">
+                                    <div class="project-header">
+                                        <div>
+                                            <span class="project-badge">Social Impact</span>
+                                            <h3 class="project-name">Food Bridge</h3>
+                                            <p class="project-tagline">Food Surplus Donation system connecting donors with communities.</p>
+                                        </div>
+                                        <a href="https://github.com/ManishShelke" target="_blank" class="btn-project"><i class="ph ph-github-logo"></i> GitHub</a>
+                                    </div>
+                                    
+                                    <p class="project-desc">Food Bridge is an integrated module designed to tackle food waste. It seamlessly connects local food donors with NGOs and communities in need, ensuring that surplus food reaches those who need it most efficiently.</p>
+                                    
+                                    <div class="project-details-grid">
+                                        <div>
+                                            <h4>Key Features</h4>
+                                            <ul class="feature-list">
+                                                <li><i class="ph ph-bowl-food"></i> Surplus detection & alerts</li>
+                                                <li><i class="ph ph-handshake"></i> Direct NGO connection</li>
+                                                <li><i class="ph ph-map-pin"></i> Location-based matching</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Technologies</h4>
+                                            <div class="title-chips">
+                                                <span class="chip">Node.js</span>
+                                                <span class="chip">MongoDB</span>
+                                                <span class="chip">Express</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <button class="carousel-btn next-btn" id="next-slide"><i class="ph ph-caret-right"></i></button>
+                </div>
+                
+                <div class="carousel-nav" id="carousel-dots">
+                    <!-- Dots will be populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== EVENTS GALLERY ==================== -->
+        <section id="gallery" class="gallery-section fade-in-up delay-1">
+            <div class="section-header">
+                <h2><i class="ph ph-camera"></i> Summits & Events</h2>
+            </div>
+
+            <div class="polaroid-grid" id="polaroid-grid">
+                <!-- Under25 Fellow Photo -->
+                <div class="polaroid tilt-left">
+                    <div class="polaroid-event-name">Under25 Fellow</div>
+                    <img src="under25.jpg" class="polaroid-img" alt="Under25 Fellow" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\\\'http://www.w3.org/2000/svg\\\' width=\\\'140\\\' height=\\\'140\\\' viewBox=\\\'0 0 24 24\\\' fill=\\\'none\\\' stroke=\\\'%231A1A00\\\' stroke-width=\\\'1.5\\\' stroke-linecap=\\\'round\\\' stroke-linejoin=\\\'round\\\'%3E%3Crect x=\\\'3\\\' y=\\\'3\\\' width=\\\'18\\\' height=\\\'18\\\' rx=\\\'2\\\' ry=\\\'2\\\'%3E%3C/rect%3E%3Ccircle cx=\\\'8.5\\\' cy=\\\'8.5\\\' r=\\\'1.5\\\'%3E%3C/circle%3E%3Cpolyline points=\\\'21 15 16 10 5 21\\\'%3E%3C/polyline%3E%3C/svg%3E'; this.style.backgroundColor='#EAEAE0'; this.style.padding='40px';">
+                    <div class="polaroid-caption">Excited to be selected as an Under25 Fellow! 🚀 Looking forward to building connections and creating impactful student experiences.</div>
+                </div>
+
+                <!-- Celonis Student Day Photo -->
+                <div class="polaroid tilt-right">
+                    <div class="polaroid-event-name">Celonis Student Day</div>
+                    <div class="polaroid-date">May 18</div>
+                    <img src="celonis.jpg" class="polaroid-img" alt="Celonis Student Day" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\\\'http://www.w3.org/2000/svg\\\' width=\\\'140\\\' height=\\\'140\\\' viewBox=\\\'0 0 24 24\\\' fill=\\\'none\\\' stroke=\\\'%231A1A00\\\' stroke-width=\\\'1.5\\\' stroke-linecap=\\\'round\\\' stroke-linejoin=\\\'round\\\'%3E%3Crect x=\\\'3\\\' y=\\\'3\\\' width=\\\'18\\\' height=\\\'18\\\' rx=\\\'2\\\' ry=\\\'2\\\'%3E%3C/rect%3E%3Ccircle cx=\\\'8.5\\\' cy=\\\'8.5\\\' r=\\\'1.5\\\'%3E%3C/circle%3E%3Cpolyline points=\\\'21 15 16 10 5 21\\\'%3E%3C/polyline%3E%3C/svg%3E'; this.style.backgroundColor='#EAEAE0'; this.style.padding='40px';">
+                    <div class="polaroid-caption">Gained valuable insights on Process Mining & AI from industry experts! 🚀 #Celonis #ProcessIntelligence</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>&copy; <span id="year"></span> Manish S (Shelke). Built with intent.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== CONNECT MODAL ==================== -->
+    <div id="connect-modal" class="modal hidden">
+        <div class="modal-content" style="max-width: 400px;">
+            <div class="modal-header">
+                <h2><i class="ph ph-link"></i> Let's Connect</h2>
+                <button id="close-connect-modal" class="btn-close"><i class="ph ph-x"></i></button>
+            </div>
+            <div class="modal-body" style="display: flex; flex-direction: column; gap: 16px;">
+                <a href="https://github.com/ManishShelke" target="_blank" class="connect-link github-link">
+                    <i class="ph ph-github-logo"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/monish-s-88a315367/" target="_blank" class="connect-link linkedin-link">
+                    <i class="ph ph-linkedin-logo"></i> LinkedIn
+                </a>
+                <a href="https://www.instagram.com/ft_shelke/" target="_blank" class="connect-link instagram-link">
+                    <i class="ph ph-instagram-logo"></i> Instagram
+                </a>
+                <a href="mailto:yupshelke2007@gmail.com" class="connect-link email-link">
+                    <i class="ph ph-envelope-simple"></i> Email Me
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
