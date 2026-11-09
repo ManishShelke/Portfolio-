@@ -238,6 +238,7 @@ main { max-width: 1400px; margin: 0 auto; padding: 32px 5%; }
 }
 
 .project-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+.project-links { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .project-badge { display: inline-block; padding: 4px 14px; background: var(--color-dark); color: var(--color-light); border-radius: 50px; font-size: 0.8rem; font-weight: 700; margin-bottom: 12px; }
 .project-name { font-size: 2rem; margin-bottom: 8px; word-wrap: break-word; }
 .project-tagline { font-size: 1.1rem; font-weight: 500; max-width: 100%; opacity: 0.8; }
