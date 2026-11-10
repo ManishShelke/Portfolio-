@@ -47,6 +47,61 @@ img { max-width: 100%; display: block; }
 }
 
 /* ==========================================================================
+   3D Experience Styles - Premium Enhancements
+   ========================================================================== */
+
+#hero-3d-container,
+#ambient-3d-particles,
+#skill-orbs-container,
+#global-3d-particles {
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Ensure content stays above 3D backgrounds */
+.card-content,
+.bio-content,
+.profile-img,
+.project-slide-content > *,
+.polaroid > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* 3D tilt smooth transition */
+.project-slide-content {
+    transition: transform 0.2s cubic-bezier(0.2, 0, 0.2, 1), box-shadow 0.2s ease-out;
+    transform-style: preserve-3d;
+}
+
+/* Reduced motion - disable 3D animations */
+@media (prefers-reduced-motion: reduce) {
+    #hero-3d-container,
+    #ambient-3d-particles,
+    #skill-orbs-container,
+    #global-3d-particles {
+        display: none !important;
+    }
+
+    .project-slide-content {
+        transform: none !important;
+        transition: none !important;
+    }
+}
+
+/* Mobile optimizations for 3D */
+@media (max-width: 768px) {
+    #hero-3d-container,
+    #ambient-3d-particles {
+        opacity: 0.15;
+    }
+
+    .project-slide-content {
+        transform: none !important;
+    }
+}
+
+/* ==========================================================================
    Animations
    ========================================================================== */
 .fade-in-up {
