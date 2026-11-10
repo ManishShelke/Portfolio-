@@ -143,7 +143,15 @@ main { max-width: 1400px; margin: 0 auto; padding: 32px 5%; }
 @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(1.4); } }
 .dark-card h1 { font-size: clamp(2.8rem, 5vw, 4.2rem); margin-bottom: 24px; }
 .accent-text { color: var(--color-light); opacity: 0.75; }
-.bio-text { font-size: 1.15rem; opacity: 0.85; max-width: 640px; margin-bottom: 32px; }
+.bio-content { max-width: 680px; margin-bottom: 32px; }
+.bio-text { font-size: 1.12rem; opacity: 0.88; line-height: 1.65; margin-bottom: 14px; }
+.bio-section { margin: 18px 0; }
+.bio-subheading { font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--color-light); margin-bottom: 12px; }
+.bio-list { display: flex; flex-direction: column; gap: 10px; }
+.bio-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 1rem; opacity: 0.9; line-height: 1.5; }
+.bio-list li i { font-size: 1.25rem; color: var(--color-light); flex-shrink: 0; margin-top: 2px; }
+.bio-list li strong { color: var(--color-light); font-weight: 700; }
+.bio-highlight { font-family: 'Outfit', sans-serif; font-size: 1.1rem; color: var(--color-light); margin-top: 18px; font-weight: 700; opacity: 0.95; }
 .title-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 32px; }
 .chip { padding: 6px 16px; background: var(--color-light); color: var(--color-dark); border-radius: 50px; font-weight: 600; font-size: 0.85rem; border: 2px solid var(--color-light); transition: var(--ease); }
 .chip:hover { transform: translateY(-2px); box-shadow: 2px 2px 0px rgba(255,255,204,0.4); }
@@ -314,7 +322,12 @@ footer { padding: 32px 5%; max-width: 1400px; margin: 0 auto; }
     
     .status-chip { font-size: 0.78rem; padding: 6px 14px; margin-bottom: 20px; }
     .dark-card h1 { font-size: clamp(1.8rem, 7vw, 2.6rem); margin-bottom: 16px; }
-    .bio-text { font-size: 0.95rem; margin-bottom: 24px; }
+    .bio-content { margin-bottom: 24px; }
+    .bio-text { font-size: 0.95rem; margin-bottom: 12px; }
+    .bio-subheading { font-size: 1.05rem; margin-bottom: 10px; }
+    .bio-list li { font-size: 0.92rem; gap: 8px; }
+    .bio-list li i { font-size: 1.15rem; }
+    .bio-highlight { font-size: 1rem; margin-top: 14px; }
     .title-chips { gap: 8px; margin-bottom: 24px; }
     .chip { padding: 5px 12px; font-size: 0.78rem; }
     
@@ -373,7 +386,11 @@ footer { padding: 32px 5%; max-width: 1400px; margin: 0 auto; }
     .card { padding: 20px; border-radius: 20px; }
     
     .dark-card h1 { font-size: clamp(1.5rem, 8vw, 2rem); margin-bottom: 12px; }
-    .bio-text { font-size: 0.88rem; margin-bottom: 20px; }
+    .bio-content { margin-bottom: 20px; }
+    .bio-text { font-size: 0.88rem; margin-bottom: 10px; }
+    .bio-subheading { font-size: 0.98rem; }
+    .bio-list li { font-size: 0.85rem; }
+    .bio-highlight { font-size: 0.92rem; }
     .chip { padding: 4px 10px; font-size: 0.72rem; }
     
     .avatar-ring { width: 100px; height: 100px; border-width: 3px; }
