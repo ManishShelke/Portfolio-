@@ -9,24 +9,30 @@ document.addEventListener('DOMContentLoaded', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    
-    const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレゲゼデベペオォコソトノホモヨョロゴゾドボポヴッン';
+    const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
     const nums = '0123456789';
-    const alphabet = katakana + latin + nums;
+    const codeSymbols = '<>{}/[]=;:()!@#$%^&*+-~_`|';
+    const alphabet = katakana + latin + nums + codeSymbols;
 
     const fontSize = 16;
-    const columns = canvas.width / fontSize;
-    const rainDrops = [];
+    let columns = Math.floor(canvas.width / fontSize);
+    let rainDrops = [];
 
-    for (let x = 0; x < columns; x++) {
-        rainDrops[x] = 1;
-    }
+    const initRain = () => {
+        columns = Math.floor(canvas.width / fontSize);
+        rainDrops = [];
+        for (let x = 0; x < columns; x++) {
+            rainDrops[x] = Math.floor(Math.random() * -50);
+        }
+    };
+    initRain();
 
     const draw = () => {
-        ctx.fillStyle = 'rgba(234, 234, 224, 0.1)'; 
+        ctx.fillStyle = 'rgba(234, 234, 224, 0.12)'; 
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         
-        ctx.fillStyle = 'rgba(26, 26, 0, 0.3)'; 
+        ctx.fillStyle = 'rgba(26, 26, 0, 0.75)'; 
         ctx.font = fontSize + 'px monospace';
 
         for (let i = 0; i < rainDrops.length; i++) {
@@ -40,11 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
     
-    setInterval(draw, 50);
+    setInterval(draw, 40);
 
     window.addEventListener('resize', () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
+        initRain();
     });
 
     // ==========================================
@@ -64,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isDeleting = false;
 
     function type() {
+        if (!typeWriterElement) return;
         if (count === texts.length) count = 0;
         currentText = texts[count];
         if (isDeleting) letter = currentText.slice(0, --index);
@@ -84,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         setTimeout(type, typeSpeed);
     }
-    setTimeout(type, 1000);
+    setTimeout(type, 600);
 
     // ==========================================
     // Mobile Menu
